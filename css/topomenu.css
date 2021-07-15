@@ -1,0 +1,43 @@
+.panel-heading{
+    
+    background-color: #E4E9ED;
+    font-family: sans-serif;
+    
+
+}
+html{
+     background-color: #E4E9ED;
+}
+h3 {
+   font-family: sans-serif;
+    
+}
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#337AB7;
+    list-style:none;
+   border-bottom:2px solid #337AB7; 
+   color: #ffffff;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a { /*configuração do menu*/
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#337AB7;
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+.sair{
+    
+    color:#ffffff;
+    background-color: #E4E9ED
+}
+#input{
+    position: static-left;
+}

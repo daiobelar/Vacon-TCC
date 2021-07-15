@@ -1,0 +1,35 @@
+#main {
+  margin-top: 40px;
+}
+
+.container-fluid{
+        background-color:#337AB7;
+
+    color: #333;
+    text-decoration: none;
+    border-bottom:1px solid #337AB7;
+    
+    text-color: #ffffff;
+    
+}
+
+#menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#337AB7;
+    list-style:none;
+}
+
+#menu ul li { display: inline; }
+
+#menu ul li a { /*configuração do menu*/
+    padding: 2px 10px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color:#337AB7;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #337AB7;
+    
+}

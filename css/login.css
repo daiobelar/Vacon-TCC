@@ -1,0 +1,242 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04/01/2021, 21:36:14
+    Author     : Kiper
+*/
+
+
+      /*CONFIGURAÇÃO BOTOES SALVAR E CANCELAR */
+      /*.botao{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        text-transform :uppercase;
+        font-weight:70;
+        border:none;
+        padding: 10px;
+        cursor:pointer;
+        display: inline-block;
+        text-decoration: none;  
+      }*/
+
+      
+      html{
+          
+          font-family: sans-serif;
+      }
+      
+      #text.info{
+          color: rgb(240, 240, 240);
+          
+      }
+      
+      #img{
+          alignment-adjust: central;
+          align-items: center;
+      }
+      
+      
+      .submit{
+        display: inline-block;
+        max-width: 110px;
+        width: 798px;
+        margin-top: 100px;
+      }
+      
+      
+      .submit{
+      background: #d1d8df;
+      color: #ffffff;
+      box-shadow: 0 5px 0 #3a20ac;
+      float: center;
+      }
+      
+      .btn-login:hover{
+        background: rgb(97, 129, 224);
+        color: #ffffff;
+        box-shadow: 0 5px 0 #3005ee;
+      }
+      .submit:active{
+        position:relative;
+        top:5px;
+        box-shadow:none;
+      }
+
+  body{
+    margin:200px;/*distancia do topo*/
+    color: rgb(19, 18, 18);
+    position:center;
+   background-color:#e4e9ed; /*color de fundo web*/
+
+  }
+  
+ 
+  a{
+    text-decoration: none;
+  }
+  
+  /* esconde as ancoras da tela */
+  a.links{
+    display: none;
+  }
+  
+  /* content que contem os formulários */
+  .content{
+    width: 500px;
+    margin: 0px auto;
+    object-position: relative;
+    
+  }
+  
+  /* formatando o cabeçalho dos formulários */
+  h1{
+    font-size: 100px;
+    color: #0e0e0e;
+    padding: 10px 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+
+  }
+  h1:after{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 10px;
+    background: -webkit-linear-gradient(left, rgba(147,184,189,0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+    background: linear-gradient(left, rgba(126, 216, 228, 0) 0%,rgba(147,184,189,0.8) 20%,rgba(147,184,189,1) 53%,rgba(147,184,189,0.8) 79%,rgba(147,184,189,0) 100%); 
+  }
+
+  h2{
+    background-color:rgb(66, 139, 202); /*#95b8dd;*/
+    font-size:100px x-large;
+    text-align: center;
+    text-decoration-color: #95b8dd;
+    margin: 20 px;
+    
+    color:rgb(7, 7, 7)
+    }
+
+    .description{
+
+     background-color: #337AB7;
+  
+    font-size:100px large;
+    text-align: center;
+    
+    margin: 0 px;
+    font-weight: 300 px;
+   font-display: 20;
+    color: rgb(8, 8, 8);
+    font-family: sans-serif;
+    font-weight: bold;
+
+
+
+    }
+  
+  p{/* campo do informe os dados para login*/
+    
+    margin-bottom:10px;
+  }
+  
+ 
+  
+  /**** dados do nome e email nos campos ****/
+  /* placeholder */
+  ::-webkit-input-placeholder  {
+    color: rgb(1, 0, 5); 
+    font-style: italic;
+  }
+  input:-moz-placeholder,
+  textarea:-moz-placeholder{
+    color: #ce2222;
+    font-style: italic;
+  } 
+  input {
+    outline: none;
+    cursor: pointer; 
+  }
+  
+  input:not([type="checkbox"]){/*input texto*/
+    width: 95%;
+    margin-top: 4px;
+    padding: 10px;    
+    border: 1px solid #b0c8ce;
+    
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-box-shadow: e9f3f10px 1px 4px 0px #e9f3f1 inset;
+    box-shadow: 0px 1px 4px 0px #e9f3f1 inset;
+    
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+ 
+ input[type="submit"]{/*configuração botão */
+    width: 100%!important;
+    cursor: pointer;  
+    background: #d1d8df;
+    color:rgb(17, 17, 17);
+    font-size: 20px;  
+    border: 1px solid #fff;   
+    margin-bottom: 2px;  
+    text-shadow: #141414;
+    
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    
+    transition: all 0.2s linear;
+  }
+  
+  input[type="submit"]:hover{
+    background: #95b8dd;
+  }
+
+  /*marcando os links para mudar de um formulário para outro */
+  /*.link{
+    position: absolute;
+    background: #161616;
+    color: #0c0c0c;
+    left: 0px;
+    height: 20px;
+    width: 440px;
+    padding: 17px 30px 20px 30px;
+    font-size: 16px;
+    text-align: right;
+    border-top: 1px solid #dbe5e8;
+  
+    -webkit-border-radius: 0 0  5px 5px;
+    border-radius: 0 0  5px 5px;
+  }
+  .link a {
+    font-weight: bold;
+    background: #0a0a0a;
+    padding: 6px;
+    color: rgb(29, 162, 193);
+    margin-left: 10px;
+    border: 1px solid #cbd518;
+  
+    -webkit-border-radius: 4px;
+    border-radius: 4px;  
+  
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s  linear;
+  }
+  .link a:hover {
+    color: #39bfd7;
+    background:#0a0a0a;
+    border: 1px solid #4ab3c6;
+  }
+  */
+  /* estilos para para ambos os formulários */
+ 
+
+

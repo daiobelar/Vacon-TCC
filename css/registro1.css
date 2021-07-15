@@ -1,0 +1,248 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05/01/2021, 20:38:19
+    Author     : Kiper
+*/
+
+/* CSS reset */
+*, *:before, *:after { 
+    
+    padding:0;
+    font-family: Arial,sans-serif;
+    font-color :rgb(238, 235, 235);
+  }
+  
+  fieldset {/*borda na volta do cadastro., deixar 0 sem borda*/
+    border: 1;
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+h3{
+    
+    font-family: Arial,sans-serif;
+    
+    
+    }
+.container {
+height: 20vh;
+background: #d1d8df;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+align-content: center;
+border: 0;
+text-shadow:  2px 2px 2px rgb(237, 235, 240);
+border-radius: 0.5em; /*arredonda a borda*/
+width: 100%;
+max-width: 980px;
+margin: auto;
+
+}
+
+button{/*botão consultar*/
+    background: #006699;
+    color: #ffffff;
+    
+    float: center;
+    border-radius:5px;
+}
+
+button:hover{
+    text-transform :uppercase;
+    
+}
+
+<br style="margin:5px 0px 5px 0px;"/>
+input[type=text]:hover, textarea:hover{ 
+         background: #ffffff; border:1px solid #990000;
+}
+ 
+input[type=submit]{
+        background:#11aaf7;
+        color:#ffffff;
+}
+
+input {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+form ,ul{
+    margin-left: 10cm;
+    /* Apenas para centralizar o form na página */
+    margin: 2 px;
+    width: 5px;
+    /* Para ver as bordas do formulário */
+    padding: 20;
+    align-items: flex-end;
+    font-size: 20px;
+}
+
+
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 900px;
+   font-size:22px;
+
+  
+}
+
+
+input[type=radio]{/*tamanho do radio*/
+    margin-top: 1px;
+    vertical-align: top;
+
+    height:15px;
+    float:left;
+
+    color: #000;
+    display: inline-block;
+    margin-right: 1em;
+    
+    
+ 
+}
+
+
+#appearance-select,#posto-select{
+    -webkit-appearance: none;  /* Remove estilo padrão do Chrome */
+    -moz-appearance: none; /* Remove estilo padrão do FireFox */
+    appearance: none; /* Remove estilo padrão do FireFox*/
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;  /* Imagem de fundo (Seta) */
+    background-position: 218px center;  /*Posição da imagem do background*/
+    width: 290px; /* Tamanho do select, maior que o tamanho da div "div-select" */
+    height:40px; /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+    border:1px solid #ddd;
+    border-radius: 10px;
+ }
+
+input, textarea,option{
+    focus {
+        background-color: lightblue;
+        color:black;
+    }
+
+    width:200px;
+	height:40px;
+	background-color:rgb(243, 242, 242);
+    border-radius: 10px;
+     /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 4em ;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid rgb(200, 203, 235);
+}
+
+input:hover, textarea:hover{ 
+    background: #ffffff; border:1px solid #3005ee;
+}
+
+input[type=submit]{
+   background:#006699;
+   color:#ffffff;
+}
+
+
+
+
+
+}
+input:focus, textarea:focus, {
+    /* Dar um pouco de destaque nos elementos ativos */
+    border-color: #000;
+}
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 10em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
+
+/*CONFIGURAÇÃO BOTOES SALVAR E CANCELAR */
+.botao{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    
+    font-weight:700;
+    border:none;
+    padding: 10px;
+    cursor:pointer;
+    display: inline-block;
+    text-decoration: none;  
+    text-align: right;
+}
+
+
+.bcontainer{
+    display: inline-block;
+    max-width: 730px;
+    width: 728px;
+    margin-top: 10px;
+}
+
+
+.btn-salvar{
+background: rgb(85, 125, 243);
+color: #ffffff;
+box-shadow: 0 5px 0 #a696ec;
+float: left;
+
+
+
+}
+
+.btn-salvar:hover{
+    background: rgb(3, 33, 124);
+    color: #ffffff;
+    box-shadow: 0 5px 0 #3005ee;
+ 
+}
+.btn-salvar:active{
+    position:relative;
+    top:5px;
+    box-shadow:none;
+}
+
+.btn-cancelar{
+    background: rgb(240, 53, 53);
+    color: #ffffff;
+    box-shadow: 0 5px 0 #a696ec;
+    float: left;
+    border-radius: 10px;
+    }
+    
+    .btn-cancelar:hover{
+        background: rgb(250, 4, 4);
+        color: #ffffff;
+        box-shadow: 0 5px 0 #5a0603;
+    }
+    .btn-cancelar:active{
+        position:relative;
+        top:5px;
+        box-shadow:none;
+    }
